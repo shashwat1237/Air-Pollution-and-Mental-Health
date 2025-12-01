@@ -182,7 +182,7 @@ pip install -r requirements.txt
 jupyter notebook
 
 
-Open notebook.ipynb and run all cells sequentially.
+Open Notebook.ipynb and run all cells sequentially.
 
 **🧾 11. Future Improvements**
 
