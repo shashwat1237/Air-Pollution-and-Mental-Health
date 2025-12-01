@@ -17,6 +17,7 @@ The notebook performs data cleaning, EDA, clustering, machine learning, and SHAP
 ├── Notebook.ipynb     # Main analysis notebook
 ├── air-pollution.csv  # Raw/cleaned dataset
 ├── README.md          # Project documentation
+├── requirements.txt
 
 **🧹 1. Data Cleaning Pipeline**
 
