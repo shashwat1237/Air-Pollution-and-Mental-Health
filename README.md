@@ -1,5 +1,5 @@
-📘 Mental State, Environment & Behaviour Analysis
-🧠 Understanding Wellbeing Through Behaviour, Environment & Physiology
+📘 **Mental State, Environment & Behaviour Analysis**
+🧠 **Understanding Wellbeing Through Behaviour, Environment & Physiology**
 
 This project explores how daily wellbeing, sleep, energy, and stress relate to:
 
@@ -14,11 +14,11 @@ Demographics & time variables
 The notebook performs data cleaning, EDA, clustering, machine learning, and SHAP explainability to understand drivers of mental state.
 
 📁 Project Structure
-├── data/              # Raw/cleaned dataset (optional)
-├── notebook.ipynb     # Main analysis notebook
+├── Notebook.ipynb     # Main analysis notebook
+├── air-pollution.csv  # Raw/cleaned dataset
 ├── README.md          # Project documentation
 
-🧹 1. Data Cleaning Pipeline
+**🧹 1. Data Cleaning Pipeline**
 
 The dataset originally contained ~56 numeric features with ~1,594 non-null values each.
 
@@ -38,7 +38,7 @@ Binned targets into balanced classes using medians
 
 Final dataset size: ~1300–1400 rows, 55 numeric features.
 
-🔎 2. Exploratory Data Analysis (EDA)
+**🔎 2. Exploratory Data Analysis (EDA)**
 Techniques used:
 
 Value distributions & boxplots
@@ -55,7 +55,7 @@ Cognitive performance patterns
 
 Mental state distributions
 
-🧩 3. Key Findings From the Data
+**🧩 3. Key Findings From the Data**
 Mental State Relationships
 
 bienestar ↔ energia: +0.67
@@ -86,7 +86,7 @@ Seconds ↔ hours = 1.00 correlation
 
 Scaled vs unscaled pollutants = 1.00 correlation
 
-🧭 4. Clustering Results
+**🧭 4. Clustering Results**
 
 K-Means tested from k = 2 to 10.
 Silhouette scores: 0.09–0.12
@@ -94,7 +94,7 @@ Silhouette scores: 0.09–0.12
 ➡️ The dataset does not contain strong clusters.
 Mental states vary continuously, not in distinct groups.
 
-🤖 5. Machine Learning Pipeline
+**🤖 5. Machine Learning Pipeline**
 
 The function f(column_to_predict) builds a model for:
 
@@ -138,7 +138,7 @@ High recall for “low state” classes
 
 Harder to detect “high state” classes
 
-📊 6. Explainability (SHAP)
+**📊 6. Explainability (SHAP)**
 
 SHAP was used to identify:
 
@@ -150,7 +150,7 @@ Their contribution to model predictions
 
 TreeExplainer + summary plots provided model interpretability.
 
-💡 7. Key Insights From Modeling
+**💡 7. Key Insights From Modeling**
 
 Internal variables (sleep, stress, energy) are the strongest predictors
 
@@ -162,7 +162,7 @@ Cognitive performance correlates with mental state
 
 XGBoost handles multicollinearity well
 
-🚀 8. Why PCA Was Not Used
+**🚀 8. Why PCA Was Not Used**
 
 PCA was intentionally not applied because:
 
@@ -176,7 +176,7 @@ Dataset size is small (55 features) → PCA unnecessary
 
 Avoiding PCA was the correct choice.
 
-🗂 9. Technologies Used
+**🗂 9. Technologies Used**
 
 Python 3
 
@@ -190,14 +190,14 @@ XGBoost
 
 SHAP
 
-📌 10. How to Run
+**📌 10. How to Run**
 pip install -r requirements.txt
 jupyter notebook
 
 
 Open notebook.ipynb and run all cells sequentially.
 
-🧾 11. Future Improvements
+**🧾 11. Future Improvements**
 
 Feature selection (remove redundant variables)
 
