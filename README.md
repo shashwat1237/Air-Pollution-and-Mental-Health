@@ -162,19 +162,6 @@ Cognitive performance correlates with mental state
 
 XGBoost handles multicollinearity well
 
-**🚀 8. Why PCA Was Not Used**
-
-PCA was intentionally not applied because:
-
-XGBoost handles multicollinearity automatically
-
-PCA harms interpretability
-
-PCA removes non-linear structure
-
-Dataset size is small (55 features) → PCA unnecessary
-
-Avoiding PCA was the correct choice.
 
 **🗂 9. Technologies Used**
 
