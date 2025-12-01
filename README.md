@@ -95,19 +95,19 @@ Silhouette scores: 0.09–0.12
 ➡️ The dataset does not contain strong clusters.
 Mental states vary continuously, not in distinct groups.
 
-**🤖 5. Machine Learning Pipeline**
+***🤖 5. Machine Learning Pipeline***
 
 The function f(column_to_predict) builds a model for:
 
-Sleep Quality (sueno)
+**Sleep Quality (sueno)**
 
-Stress (estres)
+**Stress (estres)**
 
-Energy (energia)
+**Energy (energia)**
 
-Wellbeing (bienestar)
+**Wellbeing (bienestar)**
 
-Steps:
+**Steps**:
 
 Median binning → Balanced classes
 
@@ -117,17 +117,7 @@ Oversampling for balance
 
 XGBoost classifier
 
-Evaluation using:
-
-AUC–PR
-
-Average Precision
-
-Accuracy
-
-Precision, Recall, F1
-
-Confusion matrix
+Evaluation using:AUC–PR,Average Precision,Accuracy,Precision, Recall, F1,Confusion matrix
 
 Typical Performance
 
